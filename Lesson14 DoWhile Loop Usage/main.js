@@ -1,13 +1,10 @@
-const adSoyad=['sezer','seda','kevser'];
-let i=0;
+let i = 5;
 
-while(i<10){
+while (i<5){
+    console.log(i);
+}
+
+do{
     console.log(i);
     i++;
-}
-i=0;
-while(i<adSoyad.length){
-    
-    console.log(adSoyad[i]);
-    i++;
-}
+}while(i<5);
