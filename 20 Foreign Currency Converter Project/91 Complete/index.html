@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Foreign Currency Converter</h1>
         <div class="currencyContainer">
-            <select name="currencyFirst">
+            <select name="currencyFirst" id="currencyFirst">
                 <option value="USD" selected>USD</option>
                 <option value="EUR">EUR</option>
                 <option value="AUD">AUD</option>
@@ -20,7 +20,7 @@
             <input type="number" id="count" value="1" min="0">
         </div>
         <div class="currencyContainer">
-            <select name="currencySecond">
+            <select name="currencySecond" id="currencySecond">
                 <option value="TRY" selected>TL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
@@ -30,7 +30,7 @@
             </select>
             <span id="equal">11</span>
         </div>
-        <p class="exchangeRate" id="exchangeRate">1 USD = 19 TL</p>
+        <p class="exchangeRate" id="exchangeRate"></p>
     </div>
     <script src="index.js"></script>
 </body>

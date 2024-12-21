@@ -10,6 +10,16 @@ const exchangeRate = document.querySelector('#exchangeRate');
 updateRate();
 
 function updateRate(){
-    fetch()
+    fetch(`https://v6.exchangerate-api.com/v6/6dafece7fa46538dfc6d5558/latest/${currencyFirst.value}`).then((res)=>res.json()).then((data)=>{
+        console.log(data);
+        const rate = data.conversion_rates[currencySecond.value];
+
+        exchangeRate.textContent = `1 ${currencyFirst.value} = ${rate} ${currencySecond.value}`
+        equal.textContent = (count.value * rate).toFixed(2);  
+    });
 }
 
+
+currencyFirst.addEventListener('change',updateRate);
+currencySecond.addEventListener('change',updateRate);
+count.addEventListener('input',updateRate);
