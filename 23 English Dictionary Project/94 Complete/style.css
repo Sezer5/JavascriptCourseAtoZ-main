@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    background: coral;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 30px;
+}
+.word{
+    width: 100%;
+}
+
+.word{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+button{
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+}
+
+.translatedDiv{
+    display: none;
+}
