@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.passwordContainer{
+    background-color: lightpink;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.alertContainer{
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: lightgreen;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.4s;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.inputContainer input{
+    border:none;
+    background:none ;
+    font-size: 24px;
+    outline: none;
+}
+
+.inputContainer i{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.inputContainer i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.passwordButton{
+    padding: 10px 30px;
+    font-size: 24px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+}
+
+.passwordButton:hover{
+    background-color: red;
+}
+
+.active{
+    right: -300px;
+}
