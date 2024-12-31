@@ -69,3 +69,11 @@ button{
 title{
     margin-top: 0;
 }
+
+input:valid,textarea:valid{
+    border: 1px solid greenyellow;
+}
+
+input:invalid,textarea:invalid{
+    border: 1px solid red;
+}
