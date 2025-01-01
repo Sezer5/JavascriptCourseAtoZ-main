@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="gameContainer">
+        <div class="header">
+            <h1>Taş Kâğıt Makas Oyunu</h1>
+        </div>
+        <h2>Oyuncu <span class="choice" id="playerTurn"></span> - Skor: <span id="playerScore"></span></h2>
+        <div class="playerContainer" id="player">
+            <i class="icon fa-regular fa-hand-back-fist" title="Rock" id="playerRock" onclick="select('rock')"></i>
+            <i class="icon fa-regular fa-hand" title="Paper" id="playerPaper" onclick="select('paper')"></i>
+            <i class="icon fa-regular fa-hand-scissors" title="Scissors" id="playerScissors" onclick="select('scissors')"></i>
+        </div>
+
+        <h2>Bilgisayar <span class="choice" id="computerTurn"></span> - Skor: <span id="computerScore"></span></h2>
+        <div class="playerContainer" id="computer">
+            <i class="icon fa-regular fa-hand-back-fist" title="Rock" id="computerRock"></i>
+            <i class="icon fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+            <i class="icon fa-regular fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+        </div>
+        <div class="resetContainer">
+            <i class="resetIcon icon fa-solid fa-rotate" title="Reset" onclick="resetAll()"></i>
+        </div>
+        <div class="resultContainer">
+            <h3 class="resultText" id="resultText">Lorem ipsum dolor.</h3>
+        </div>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
