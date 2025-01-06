@@ -91,6 +91,11 @@
     font-size: 20px;
   }
   
+
+  .over{
+    padding: 50px 10px;
+  }
+
   .add-container {
     min-height: 100px;
     background-color: white;
